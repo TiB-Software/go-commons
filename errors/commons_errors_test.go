@@ -1,8 +1,9 @@
 package errors
 
 import (
-	"github.com/TB-Systems/go-commons/constants"
 	"testing"
+
+	"github.com/TiB-Software/go-commons/constants"
 )
 
 func TestUserNotFound(t *testing.T) {

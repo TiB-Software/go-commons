@@ -1,9 +1,10 @@
 package utils
 
 import (
-	"github.com/TB-Systems/go-commons/constants"
-	"github.com/TB-Systems/go-commons/errors"
 	"net/http"
+
+	"github.com/TiB-Software/go-commons/constants"
+	"github.com/TiB-Software/go-commons/errors"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"

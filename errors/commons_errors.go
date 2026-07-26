@@ -1,6 +1,6 @@
 package errors
 
-import "github.com/TB-Systems/go-commons/constants"
+import "github.com/TiB-Software/go-commons/constants"
 
 func UserNotFound(detail string) ApiErrorItem {
 	return ApiErrorItem{

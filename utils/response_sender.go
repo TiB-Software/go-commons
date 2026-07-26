@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"github.com/TB-Systems/go-commons/errors"
+	"github.com/TiB-Software/go-commons/errors"
 
 	"github.com/gin-gonic/gin"
 )

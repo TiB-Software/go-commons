@@ -5,13 +5,13 @@ Shared Go utilities and models used by the Financial Control services.
 ## Module
 
 ```go
-module github.com/TB-Systems/go-commons
+module github.com/TiB-Software/go-commons
 ```
 
 ## Installation
 
 ```bash
-go get github.com/TB-Systems/go-commons@latest
+go get github.com/TiB-Software/go-commons@latest
 ```
 
 If you are using this module inside the same monorepo, prefer `go.work` to link local modules.
@@ -86,7 +86,7 @@ If you are using this module inside the same monorepo, prefer `go.work` to link 
 ### Build a standard paginated response
 
 ```go
-import "github.com/TB-Systems/go-commons/commonsmodels"
+import "github.com/TiB-Software/go-commons/commonsmodels"
 
 func makeResponse(items []string) commonsmodels.PaginatedResponse[string] {
 		return commonsmodels.PaginatedResponse[string]{
@@ -103,7 +103,7 @@ func makeResponse(items []string) commonsmodels.PaginatedResponse[string] {
 import (
 		"net/http"
 
-		"github.com/TB-Systems/go-commons/errors"
+		"github.com/TiB-Software/go-commons/errors"
 )
 
 func invalidPayload() errors.ApiError {
@@ -120,7 +120,7 @@ func invalidPayload() errors.ApiError {
 import (
 		"github.com/gin-gonic/gin"
 
-		"github.com/TB-Systems/go-commons/utils"
+		"github.com/TiB-Software/go-commons/utils"
 )
 
 func readRequest(ctx *gin.Context) {

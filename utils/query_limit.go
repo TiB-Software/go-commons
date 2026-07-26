@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"github.com/TB-Systems/go-commons/constants"
+	"github.com/TiB-Software/go-commons/constants"
 
 	"github.com/gin-gonic/gin"
 )
