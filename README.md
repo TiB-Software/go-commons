@@ -23,6 +23,7 @@ If you are using this module inside the same monorepo, prefer `go.work` to link 
 - `utils`: helpers for HTTP requests, query parsing, response writing, date handling, pgx conversions, and generic utilities.
 - `constants`: shared constants used by helpers and error builders.
 - `validator`: small interface used by request decoding helpers.
+- `email`: provider-agnostic email delivery contract and Resend implementation.
 
 ## Main Types and Helpers
 
@@ -80,6 +81,19 @@ If you are using this module inside the same monorepo, prefer `go.work` to link 
 	- `Float64ToNumeric`
 	- `NumericToFloat64`
 	- `TimeToPgTimestamptz`
+
+### email
+
+Applications depend on `email.Sender` and `email.Message`; only this package imports the Resend SDK.
+
+```go
+sender, err := email.NewResendSender(os.Getenv("RESEND_API_KEY"))
+messageID, err := sender.Send(ctx, email.Message{
+		To:      []string{"user@example.com"},
+		Subject: "Confirm your email",
+		HTML:    "<p>Confirmation code</p>",
+})
+```
 
 ## Quick Usage
 
